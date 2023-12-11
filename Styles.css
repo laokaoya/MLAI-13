@@ -1,8 +1,14 @@
-body {
-    font-family: Arial, sans-serif;
+/* Reset some default styles */
+body, h1, h2, p, button {
     margin: 0;
     padding: 0;
-    background-color: #f0f0f0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f8f8f8;
 }
 
 .container {
@@ -11,7 +17,7 @@ body {
 }
 
 h1 {
-    color: #333;
+    color: #007BFF;
 }
 
 .buttons {
@@ -19,20 +25,29 @@ h1 {
 }
 
 button {
-    padding: 10px 20px;
+    padding: 12px 24px;
     font-size: 16px;
     margin: 0 10px;
     cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
 }
 
 button#investorBtn {
-    background-color: #4CAF50;
+    background-color: #28a745;
     color: #fff;
-    border: none;
+}
+
+button#investorBtn:hover {
+    background-color: #218838;
 }
 
 button#entrepreneurBtn {
-    background-color: #2196F3;
+    background-color: #007BFF;
     color: #fff;
-    border: none;
+}
+
+button#entrepreneurBtn:hover {
+    background-color: #0056b3;
 }
